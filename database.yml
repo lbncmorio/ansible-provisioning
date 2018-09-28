@@ -1,0 +1,9 @@
+---
+
+- hosts: localhost
+  roles:
+  - common
+  - database
+  tasks:
+  - debug:
+      msg: "Deployment finished !"

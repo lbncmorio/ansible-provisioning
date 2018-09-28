@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  roles:
+  - common
+  - webserver
+  # - { role: webserver, become: true }
+  tasks:
+  - debug:
+      msg: "Deployment finished !"

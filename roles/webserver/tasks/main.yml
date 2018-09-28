@@ -1,0 +1,7 @@
+---
+# tasks file for roles/webserver
+
+- name: Install Nginx package
+  yum:
+    name: nginx
+  become: true

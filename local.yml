@@ -1,0 +1,6 @@
+---
+
+- hosts: localhost
+  tasks:
+  - debug:
+      msg: Default playbook 'local.yml' does nothing.
