@@ -1,2 +1,14 @@
 ---
 # tasks file for roles/database
+
+- name: Install MariaDB package
+  yum:
+    name: mariadb-server
+  become: true
+
+- name: Enable MariaDB service
+  service:
+    name: mariadb
+    enabled: true
+    state: started
+  become: true
